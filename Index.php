@@ -6,7 +6,7 @@
   
 
   <!-- Site Title-->
-  <title>Federación de Navajeros del Perú </title>
+  <title>Federación de Navajeros Peruanos del Perú </title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

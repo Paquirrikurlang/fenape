@@ -1,0 +1,120 @@
+
+/* HD-5219 - NAVIDAD (INTRO NAVIDEÑO) */
+
+body{
+    opacity:0;
+}
+
+.intro__navidenio {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 20000;
+    opacity: 1;
+}
+
+.intro__navidenio--ocultar {
+    background-color: #981411;
+    animation-name: ocultarIntroNavidenio;
+    animation-fill-mode: forwards;
+    animation-duration:3s;
+}
+
+@keyframes ocultarIntroNavidenio{
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index:-1;
+    }
+}
+
+@-moz-keyframes ocultarIntroNavidenio {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes ocultarIntroNavidenio {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-o-keyframes ocultarIntroNavidenio {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.intro__navidenio,
+.intro__navidenio__container,
+.intro__navidenio video {
+    height: 100%;
+}
+
+.intro__navidenio__container {
+    opacity:0;
+    -moz-transition: opacity 1.2s ease;
+    -o-transition: opacity 1.2s ease;
+    -webkit-transition: opacity 1.2s ease;
+    transition: opacity 1.2s ease;
+}
+
+.intro__navidenio__container--mostrar {
+    opacity: 1;
+}
+
+.intro__navidenio,
+.intro__navidenio video {
+    width:100%;
+}
+
+.intro__navidenio video {
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width:991px) and (orientation:portrait){
+
+    .intro__navidenio video {
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+/* FIN - HD-5219 - NAVIDAD (INTRO NAVIDEÑO) */
